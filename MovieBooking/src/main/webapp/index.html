@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link  rel="stylesheet" href="css/style.css" />
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+</head>
+<body>
+    <section class="login_background">
+        <div class="col-12 col-md-6 col-lg-5 border my-div">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link fw-bold active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Login</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link fw-bold" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Sign Up</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link fw-bold" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Admin Login</button>
+            </li>
+        </ul>
+          <div class="tab-content " id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div>
+                    <form method="get" action="login.jsp" class="form-control bg-transparent border border-none" id="login">
+                        <label for="" class="fw-bold mt-2 mb-2">Email Id : </label>
+                        <input type="text" placeholder="Enter EmailId" class="form-control bg-transparent" name="Emailid" required>
+                        <label for="" class="fw-bold mt-2 mb-2">Password : </label>
+                        <input type="password" placeholder="Enter Password" class="form-control bg-transparent" name="Password" required>
+                        <button type="submit" class="btn btn-primary d-block m-auto mt-3 w-100">Login</button>
+                        <p class="text-center mt-2">Don't Have an account ? <a onclick="signuptab()" class="text-decoration-none">Sign Up</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div>
+                    <form method="get" action="signup.jsp" class="form-control bg-transparent border border-none">
+                        <label for="" class="fw-bold mt-2 mb-2 ">First Name : </label>
+                        <input type="text" placeholder="Enter First Name" class=" bg-transparent form-control" name="firstname" required>
+                        <label for=""  class="fw-bold mt-2 mb-2">Last Name</label>
+                        <input type="text" placeholder="Enter Last Name" class="form-control bg-transparent" name="lastname" required>
+                        <label for="" class="fw-bold mt-2 mb-2">Email id : </label>
+                        <input type="text" placeholder="Enter EmailId" class="form-control bg-transparent" name="emailid"  required>
+                        <label for="" class="fw-bold mt-2 mb-2">Password : </label>
+                        <input type="password" placeholder="Enter Password" class="form-control bg-transparent" name="epassword" required>
+                        <p class="text-center mt-2">Already have an account? <a href="index.html" class="text-decoration-none">Login</a></p>
+                        <button type="submit" class="btn btn-primary d-block m-auto mt-2 w-100">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <div>
+                    <form method="get" action="AdminLogin.jsp" class="form-control bg-transparent border border-none">
+                        <label for="" class="fw-bold mt-2 mb-2">Email Id : </label>
+                        <input type="text" placeholder="Enter Username" class="form-control bg-transparent" name="Username" required>
+                        <label for="" class="fw-bold mt-2 mb-2">Password : </label>
+                        <input type="password" placeholder="Enter Username" class="form-control bg-transparent" name="Password" required>
+                        <button type="submit" class="btn btn-primary d-block m-auto mt-2 w-100">Login</button>
+                    </form>
+                </div>
+            </div>
+          </div>
+        </div>      
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
