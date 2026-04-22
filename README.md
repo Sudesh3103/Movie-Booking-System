@@ -1,3 +1,4 @@
+<img width="960" height="445" alt="vlc_RR8VU548r3" src="https://github.com/user-attachments/assets/930ae169-fc58-4636-b0da-51b6eec2a008" />
 🎬 Movie Booking System
 A robust, web-based application designed to streamline the movie ticket reservation process. Built using Java, JSP, and Servlets, this project demonstrates a full-stack approach to managing cinema bookings, user accounts, and show schedules.
 
